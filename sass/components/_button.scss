@@ -1,0 +1,116 @@
+.btn__primary {
+  padding: 1.2rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 1px solid $color-primary;
+  background-color: $color-primary;
+  color: $color-white;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-primary;
+  }
+
+  span {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 1rem;
+    align-items: center;
+  }
+}
+
+.btn__secondary {
+  padding: 0.9rem 2rem;
+  font-size: 1.8rem;
+  border: 2px solid $color-secondary;
+  border-radius: 6px;
+  background-color: $color-white;
+  color: $color-secondary;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-secondary;
+    color: $color-white;
+  }
+
+  span {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 1rem;
+    align-items: center;
+  }
+}
+
+.btn__tertiary {
+  padding: 0.9rem 2rem;
+  font-size: 1.8rem;
+  border-radius: 6px;
+  border: 2px solid $color-secondary;
+  background-color: $color-secondary;
+  color: $color-white;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-secondary;
+  }
+
+  span {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 1rem;
+    align-items: center;
+  }
+}
+
+.btn__light {
+  padding: 1.2rem 2rem;
+  font-size: 1.8rem;
+  border-radius: 6px;
+  border: 2px solid #e7eaef;
+  background-color: $color-white;
+  color: $color-secondary;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  span {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 1rem;
+    align-items: center;
+  }
+}
+
+.btn__danger {
+  padding: 1.2rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  border: 2px solid #e7eaef;
+  background-color: $color-white;
+  color: $color-secondary;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f8452d;
+    color: $color-white;
+    border-color: #f8452d;
+  }
+
+  span {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 1rem;
+    align-items: center;
+  }
+}

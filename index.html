@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Appie</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__col-left">
+          <img src="./img/download.png" alt="Logo" />
+          <ul class="navbar-menu">
+            <li class="navbar-item navbar-dropdown">
+              <a class="navbar-link" href="#">Home</a
+              ><i class="fas fa-chevron-down"></i>
+              <ul class="navbar-list" id="submenu">
+                <li><a class="navbar-link" href="#">Home 1</a></li>
+                <li><a class="navbar-link" href="#">Home 2</a></li>
+                <li><a class="navbar-link" href="#">Home 3</a></li>
+                <li><a class="navbar-link" href="#">Home 4</a></li>
+                <li><a class="navbar-link" href="#">Home 5</a></li>
+                <li><a class="navbar-link" href="#">Home 6</a></li>
+                <li><a class="navbar-link" href="#">Home 7</a></li>
+                <li><a class="navbar-link" href="#">Home 8</a></li>
+              </ul>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#">Service</a>
+            </li>
+            <li class="navbar-item navbar-dropdown">
+              <a class="navbar-link" href="#">Pages</a
+              ><i class="fas fa-chevron-down"></i>
+              <ul class="navbar-list" id="submenu">
+                <li><a class="navbar-link" href="#">About Us</a></li>
+                <li><a class="navbar-link" href="#">Error</a></li>
+              </ul>
+            </li>
+            <li class="navbar-item navbar-dropdown">
+              <a class="navbar-link" href="#">News</a
+              ><i class="fas fa-chevron-down"></i>
+              <ul class="navbar-list" id="submenu">
+                <li><a class="navbar-link" href="#">News</a></li>
+                <li><a class="navbar-link" href="#">Single News</a></li>
+              </ul>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar__col-right">
+          <span
+            ><i class="far fa-user"></i><a href="navbar-link">Login</a></span
+          >
+          <button class="btn__primary">Get Started</button>
+        </div>
+
+        <span class="fas fa-bars fa-3x navbar__icon"></span>
+      </nav>
+
+      <nav class="second-navbar">
+        <figure>
+          <img src="./img/download.png" alt="Logo" />
+        </figure>
+
+        <div>
+          <ul class="nav-list">
+            <li class="clickToExpand-1">
+              <span
+                ><a href="#">Home</a><i class="fas fa-chevron-down"></i
+              ></span>
+              <ul class="nav-list-submenu-1">
+                <li><a class="nav-link" href="#">Home 1</a></li>
+                <li><a class="nav-link" href="#">Home 2</a></li>
+                <li><a class="nav-link" href="#">Home 3</a></li>
+                <li><a class="nav-link" href="#">Home 4</a></li>
+                <li><a class="nav-link" href="#">Home 5</a></li>
+                <li><a class="nav-link" href="#">Home 6</a></li>
+                <li><a class="nav-link" href="#">Home 7</a></li>
+                <li><a class="nav-link" href="#">Home 8</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Service</a></li>
+            <li class="clickToExpand-2">
+              <span
+                ><a href="#">Pages</a><i class="fas fa-chevron-down"></i
+              ></span>
+              <ul class="nav-list-submenu-2">
+                <li><a class="nav-link" href="#">About Us</a></li>
+                <li><a class="nav-link" href="#">Error</a></li>
+              </ul>
+            </li>
+            <li class="clickToExpand-3">
+              <span
+                ><a href="#">News</a><i class="fas fa-chevron-down"></i
+              ></span>
+              <ul class="nav-list-submenu-3">
+                <li><a class="nav-link" href="#">News</a></li>
+                <li><a class="nav-link" href="#">Single News</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-icons">
+          <span>
+            <i class="fab fa-facebook-f"></i>
+          </span>
+          <span>
+            <i class="fab fa-twitter"></i>
+          </span>
+          <span>
+            <i class="fab fa-instagram"></i>
+          </span>
+          <span>
+            <i class="fab fa-dribbble"></i>
+          </span>
+        </div>
+      </nav>
+
+      <div class="header-body">
+        <div class="container">
+          <div class="header-row">
+            <div class="header-body__content">
+              <p class="paragraph-secondary">Wellcome To Appie</p>
+              <h1 class="heading-primary">
+                Manage it all, in this all new system.
+              </h1>
+              <p class="paragraph">
+                Hanky panky lavatory up the duff jolly good cack brolly is
+                chinwag zonked happy days sloshed.
+              </p>
+              <div>
+                <a href="#" class="btn__tertiary">
+                  <span>
+                    <i class="fab fa-apple"></i>
+                    Download for ios
+                  </span>
+                </a>
+
+                <a href="#" class="btn__secondary">
+                  <span>
+                    <i class="fab fa-google-play"></i>
+                    Donload for Android
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="header-body__banner">
+              <div>
+                <img src="./img/hero-thumb-1.7bd41510.png" alt="Banner" />
+              </div>
+              <div>
+                <img
+                  class="coffee"
+                  src="./img/hero-thumb-2.50cabf5e.png"
+                  alt="Banner"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- SECTION DESIGN -->
+      <section class="design">
+        <div class="container">
+          <div class="design-row">
+            <h2 class="heading-secondary m-b-sm">
+              Designed with The applicant in mind.
+            </h2>
+            <p class="paragraph m-b-md">
+              The full monty spiffing good time no biggie cack grub fantastic.
+            </p>
+            <div class="design-items">
+              <div class="design-item">
+                <span class="gr-1">
+                  <i class="fas fa-search fa-3x"></i>
+                </span>
+                <h4 class="heading-tertiary">Searching</h4>
+                <p class="paragraph">
+                  Mucker plastered bugger all mate morish are.
+                </p>
+              </div>
+              <div class="design-item">
+                <span class="gr-2">
+                  <i class="far fa-meh fa-3x"></i>
+                </span>
+                <h4 class="heading-tertiary">Designing</h4>
+                <p class="paragraph">
+                  Mucker plastered bugger all mate morish are.
+                </p>
+              </div>
+              <div class="design-item">
+                <span class="gr-3">
+                  <i class="fas fa-lock fa-3x"></i>
+                </span>
+                <h4 class="heading-tertiary">Building</h4>
+                <p class="paragraph">
+                  Mucker plastered bugger all mate morish are.
+                </p>
+              </div>
+              <div class="design-item">
+                <span class="gr-4">
+                  <i class="fas fa-headphones-alt fa-3x"></i>
+                </span>
+                <h4 class="heading-tertiary">Suporting</h4>
+                <p class="paragraph">
+                  Mucker plastered bugger all mate morish are.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION CONVERSATION -->
+      <section class="conversation">
+        <div class="container">
+          <div class="conversation-row">
+            <div class="col-1">
+              <span>
+                <i class="fas fa-cog fa-2x active"></i>
+                <p class="paragraph" style="color: #2b70fa">Settings</p>
+              </span>
+              <span>
+                <i class="fas fa-exclamation-triangle fa-2x"></i>
+                <p class="paragraph">Report</p>
+              </span>
+              <span>
+                <i class="fas fa-bell fa-2x"></i>
+                <p class="paragraph">Saeety Notices</p>
+              </span>
+              <span>
+                <i class="fas fa-lock fa-2x"></i>
+                <p class="paragraph">App Lock</p>
+              </span>
+            </div>
+            <div class="col-2">
+              <img src="./img/features-thumb-1.f313298b.png" alt="Features" />
+            </div>
+            <div class="col-3">
+              <p class="paragraph-secondary">Custom Reacyions</p>
+              <h2 class="heading-secondary">Let the Conversation flow</h2>
+              <p class="paragraph">
+                Car boot absolutely bladdered posh burke the wireless mush some
+                dodg.
+              </p>
+              <button class="btn__primary">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION STAGE -->
+      <section class="stage">
+        <div class="container">
+          <div class="stage-row">
+            <div class="stage__content">
+              <p class="paragraph-secondary">Traffic</p>
+              <h2 class="heading-secondary">
+                Stage reporting with 50k queries.
+              </h2>
+              <p class="paragraph">
+                He nicked it tickety boo harry the cras bargy chap mush spiffing
+                spend a penny the full monty burke butty.
+              </p>
+              <div class="stage__content-items">
+                <div class="item">
+                  <span class="item-icon-1">
+                    <i class="fas fa-check"></i>
+                  </span>
+                  <h4 class="heading-tertiary">Carefully designed</h4>
+                  <p class="paragraph">
+                    Mucker plastered bugger all mate morish are.
+                  </p>
+                </div>
+                <div class="item">
+                  <span class="item-icon-2">
+                    <i class="fas fa-check"></i>
+                  </span>
+                  <h4 class="heading-tertiary">Choose a App</h4>
+                  <p class="paragraph">
+                    Mucker plastered bugger all mate morish are.
+                  </p>
+                </div>
+                <div class="item">
+                  <span class="item-icon-3">
+                    <i class="fas fa-check"></i>
+                  </span>
+                  <h4 class="heading-tertiary">Seamless Sync</h4>
+                  <p class="paragraph">
+                    Mucker plastered bugger all mate morish are.
+                  </p>
+                </div>
+                <div class="item">
+                  <span class="item-icon-4">
+                    <i class="fas fa-check"></i>
+                  </span>
+                  <h4 class="heading-tertiary">User Interactive</h4>
+                  <p class="paragraph">
+                    Mucker plastered bugger all mate morish are.
+                  </p>
+                </div>
+              </div>
+              <a href="#" class="btn__light">
+                <span>
+                  Learn More
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </a>
+            </div>
+
+            <div class="stage__banner">
+              <img
+                src="./img/traffic-thumb.94f93be8.png"
+                alt="Traffic Banner"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION SLIDER -->
+      <section class="slider">
+        <div class="container">
+          <div class="slider-row">
+            <input type="radio" name="slider" id="slide1" checked />
+            <input type="radio" name="slider" id="slide2" />
+            <input type="radio" name="slider" id="slide3" />
+            <input type="radio" name="slider" id="slide4" />
+            <div id="slides">
+              <div id="overflow">
+                <div class="inner">
+                  <div class="slide slide_1">
+                    <div class="slide-content">
+                      <figure class="user">
+                        <img
+                          src="./img/testimonial-user.2b35df3f.png"
+                          alt="User"
+                        />
+                        <figcaption>
+                          <h5>Jason Response</h5>
+                          <span>April 14, 2022</span>
+                        </figcaption>
+                      </figure>
+                      <p>
+                        Why I say old chap that is spiffing lurgy Oxford
+                        cracking goal bleeder, bog-standard <br />Harry
+                        brilliant mush a blinding shot starkers.
+                      </p>
+                      <figure class="star">
+                        <img src="./img/star.png" alt="Star" />
+                        <img src="./img/star.png" alt="Star" />
+                        <img src="./img/star.png" alt="Star" />
+                        <img src="./img/star.png" alt="Star" />
+                        <img src="./img/star.png" alt="Star" />
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="slide slide_2">
+                    <div class="slide-content">
+                      <figure class="user">
+                        <img
+                          src="./img/testimonial-user.2b35df3f.png"
+                          alt="User"
+                        />
+                        <figcaption>
+                          <h5>Jason Response</h5>
+                          <span>April 14, 2022</span>
+                        </figcaption>
+                      </figure>
+                      <p>
+                        Why I say old chap that is spiffing lurgy Oxford
+                        cracking goal bleeder, bog-standard <br />Harry
+                        brilliant mush a blinding shot starkers.
+                      </p>
+                      <figure class="star">
+                        <img src="./img/star.png" alt="Star" />
+                        <img src="./img/star.png" alt="Star" />
+                        <img src="./img/star.png" alt="Star" />
+                        <img src="./img/star.png" alt="Star" />
+                        <img src="./img/star.png" alt="Star" />
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="slide slide_3">
+                    <div class="slide-content">
+                      <figure class="user">
+                        <img
+                          src="./img/testimonial-user.2b35df3f.png"
+                          alt="User"
+                        />
+                        <figcaption>
+                          <h5>Jason Response</h5>
+                          <span>April 14, 2022</span>
+                        </figcaption>
+                      </figure>
+                      <p>
+                        Why I say old chap that is spiffing lurgy Oxford
+                        cracking goal bleeder, bog-standard <br />Harry
+                        brilliant mush a blinding shot starkers.
+                      </p>
+                      <figure class="star">
+                        <img src="./img/star.png" alt="Star" />
+                        <img src="./img/star.png" alt="Star" />
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="slide slide_4">
+                    <div class="slide-content">
+                      <figure class="user">
+                        <img
+                          src="./img/testimonial-user.2b35df3f.png"
+                          alt="User"
+                        />
+                        <figcaption>
+                          <h5>Jason Response</h5>
+                          <span>April 14, 2022</span>
+                        </figcaption>
+                      </figure>
+                      <p>
+                        Why I say old chap that is spiffing lurgy Oxford
+                        cracking goal bleeder, bog-standard <br />Harry
+                        brilliant mush a blinding shot starkers.
+                      </p>
+                      <figure class="star">
+                        <img src="./img/star.png" alt="Star" />
+                        <img src="./img/star.png" alt="Star" />
+                        <img src="./img/star.png" alt="Star" />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="controls">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+              <label for="slide4"></label>
+            </div>
+            <div id="bullets">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+              <label for="slide4"></label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION MEMBERS -->
+      <section class="members">
+        <div class="container">
+          <div class="members-row">
+            <h2 class="heading-secondary">Meet our Team Members</h2>
+            <p class="paragraph">
+              Different layouts and styles for team sections.
+            </p>
+            <div class="profile">
+              <div class="member">
+                <figure>
+                  <img src="./img/team-2.8f3ea077.jpg" alt="Member" />
+                  <figcaption>
+                    <span>
+                      <i class="fab fa-facebook-f fa-2x"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-twitter fa-2x"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-pinterest-p fa-2x"></i>
+                    </span>
+                  </figcaption>
+                </figure>
+                <h4 class="heading-tertiary">Benjamin Evalent</h4>
+                <h5>CEO-Founder</h5>
+              </div>
+              <div class="member">
+                <figure>
+                  <img src="./img/team-1.d637d53a.jpg" alt="Member" />
+                  <figcaption>
+                    <span>
+                      <i class="fab fa-facebook-f fa-2x"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-twitter fa-2x"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-pinterest-p fa-2x"></i>
+                    </span>
+                  </figcaption>
+                </figure>
+                <h4 class="heading-tertiary">Benjamin Evalent</h4>
+                <h5>CEO-Founder</h5>
+              </div>
+              <div class="member">
+                <figure>
+                  <img src="./img/team-3.983245d3.jpg" alt="Member" />
+                  <figcaption>
+                    <span>
+                      <i class="fab fa-facebook-f fa-2x"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-pinterest-p fa-2x"></i>
+                    </span>
+                  </figcaption>
+                </figure>
+                <h4 class="heading-tertiary">Benjamin Evalent</h4>
+                <h5>CEO-Founder</h5>
+              </div>
+              <div class="member">
+                <figure>
+                  <img src="./img/team-4.1d95ef10.jpg" alt="Member" />
+                  <figcaption>
+                    <span>
+                      <i class="fab fa-facebook-f fa-2x"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-twitter fa-2x"></i>
+                    </span>
+                    <span>
+                      <i class="fab fa-pinterest-p fa-2x"></i>
+                    </span>
+                  </figcaption>
+                </figure>
+                <h4 class="heading-tertiary">Benjamin Evalent</h4>
+                <h5>CEO-Founder</h5>
+              </div>
+            </div>
+            <a href="#" class="btn__light">
+              <span>
+                View all Members
+                <i class="fas fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION PLAN -->
+      <section class="plan">
+        <div class="container">
+          <div class="plan-row-1">
+            <h2 class="heading-secondary">Choose your plan</h2>
+            <p class="paragraph">
+              Different layouts and styles for team sections.
+            </p>
+            <div class="toggle">
+              <labe class="month">Monthly</labe>
+              <input type="checkbox" id="switch" /><label for="switch"
+                >Toggle</label
+              >
+              <labe class="annual">Annualy</labe>
+            </div>
+            <div class="plan-items">
+              <div class="plan__item">
+                <h4 class="heading-tertiary">Fresh</h4>
+                <div class="price">
+                  <span class="dollar">$</span>
+                  <p><span>04</span>/month</p>
+                </div>
+                <p class="plan__description">Get your 14 day free trial</p>
+                <div class="plan__option">
+                  <div class="option-box">
+                    <span class="icon">
+                      <i class="fas fa-check"></i>
+                    </span>
+                    <p>60-day chat history</p>
+                  </div>
+
+                  <div class="option-box">
+                    <span class="icon">
+                      <i class="fas fa-check"></i>
+                    </span>
+                    <p>15 GB cloud storage</p>
+                  </div>
+                </div>
+                <button class="btn__danger">Choose plan</button>
+              </div>
+
+              <div class="plan__item-2">
+                <h4 class="heading-tertiary">Sweet</h4>
+                <div class="price">
+                  <span class="dollar">$</span>
+                  <p><span>16</span>/month</p>
+                </div>
+                <p class="plan__description">
+                  Billed $276 per website annually.
+                </p>
+                <div class="plan__option">
+                  <div class="option-box">
+                    <span class="icon">
+                      <i class="fas fa-check"></i>
+                    </span>
+                    <p>60-day chat history</p>
+                  </div>
+
+                  <div class="option-box">
+                    <span class="icon">
+                      <i class="fas fa-check"></i>
+                    </span>
+                    <p>50 GB cloud storage</p>
+                  </div>
+
+                  <div class="option-box">
+                    <span class="icon">
+                      <i class="fas fa-check"></i>
+                    </span>
+                    <p>24/7 Support</p>
+                  </div>
+                </div>
+                <button>Choose plan</button>
+              </div>
+
+              <div class="plan__item">
+                <h4 class="heading-tertiary">Juicy</h4>
+                <div class="price">
+                  <span class="dollar">$</span>
+                  <p><span>27</span>/month</p>
+                </div>
+                <p class="plan__description">
+                  Billed $276 per website annually.
+                </p>
+                <div class="plan__option">
+                  <div class="option-box">
+                    <span class="icon">
+                      <i class="fas fa-check"></i>
+                    </span>
+                    <p>60-day chat history</p>
+                  </div>
+
+                  <div class="option-box">
+                    <span class="icon">
+                      <i class="fas fa-check"></i>
+                    </span>
+                    <p>Data security</p>
+                  </div>
+
+                  <div class="option-box">
+                    <span class="icon">
+                      <i class="fas fa-check"></i>
+                    </span>
+                    <p>100 GB cloud storage</p>
+                  </div>
+
+                  <div class="option-box">
+                    <span class="icon">
+                      <i class="fas fa-check"></i>
+                    </span>
+                    <p>24/7 Support</p>
+                  </div>
+                </div>
+                <button class="btn__danger">Choose plan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="plan-row-2">
+            <h2 class="heading-secondary">Frequently asked questions</h2>
+            <p class="paragraph">
+              Different layouts and styles for team sections.
+            </p>
+
+            <div class="questions">
+              <div class="questions-row">
+                <div class="question">
+                  <h4 class="heading-tertiary">
+                    Where do I usually find FAQs in a page?
+                  </h4>
+                  <p>
+                    Naff Oxford vagabond in my flat chinwag blatant grub
+                    tomfoolery that I bits and bobs up the duff cras boot bevvy
+                    no biggie.
+                  </p>
+                </div>
+                <div class="question">
+                  <h4 class="heading-tertiary">
+                    Where do I usually find FAQs in a page?
+                  </h4>
+                  <p>
+                    Naff Oxford vagabond in my flat chinwag blatant grub
+                    tomfoolery that I bits and bobs up the duff cras boot bevvy
+                    no biggie.
+                  </p>
+                </div>
+              </div>
+              <div class="questions-row">
+                <div class="question">
+                  <h4 class="heading-tertiary">
+                    Where do I usually find FAQs in a page?
+                  </h4>
+                  <p>
+                    Naff Oxford vagabond in my flat chinwag blatant grub
+                    tomfoolery that I bits and bobs up the duff cras boot bevvy
+                    no biggie.
+                  </p>
+                </div>
+                <div class="question">
+                  <h4 class="heading-tertiary">
+                    Where do I usually find FAQs in a page?
+                  </h4>
+                  <p>
+                    Naff Oxford vagabond in my flat chinwag blatant grub
+                    tomfoolery that I bits and bobs up the duff cras boot bevvy
+                    no biggie.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p class="plan-email">
+              Cant't find an answer? <span>Email us</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION BLOG -->
+      <section class="blog">
+        <div class="container">
+          <div class="blog-row-1">
+            <h2 class="heading-secondary">Latest blog posts</h2>
+            <p class="paragraph">
+              Different layouts and styles for team sections.
+            </p>
+            <div class="blogs">
+              <div class="blog-item">
+                <div>
+                  <figure>
+                    <img src="./img/blog-1.e9afbb94.jpg" alt="Blog" />
+                  </figure>
+                  <span>
+                    <p class="date">March 10, 2022</p>
+                    <p class="tech">Sass & App</p>
+                  </span>
+                  <h3>
+                    <a href="#"> Introducing New Apps Design </a>
+                  </h3>
+                  <a class="blog-link" href="#">Learn More &rarr;</a>
+                </div>
+              </div>
+              <div class="blog-item">
+                <div>
+                  <figure>
+                    <img src="./img/blog-2.89baf9df.jpg" alt="Blog" />
+                  </figure>
+                  <span>
+                    <p class="date">March 10, 2022</p>
+                    <p class="tech">Sass & App</p>
+                  </span>
+                  <h3>
+                    <a href="#"> Introducing New Apps Design</a>
+                  </h3>
+                  <a class="blog-link" href="#">Learn More &rarr;</a>
+                </div>
+              </div>
+              <div class="blog-item">
+                <div>
+                  <figure>
+                    <img src="./img/blog-3.5a928703.jpg" alt="Blog" />
+                  </figure>
+                  <span>
+                    <p class="date">March 10, 2022</p>
+                    <p class="tech">Sass & App</p>
+                  </span>
+                  <h3>
+                    <a href="#">Introducing New Apps Design</a>
+                  </h3>
+                  <a class="blog-link" href="#">Learn More &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-row-2">
+            <div class="col-left">
+              <h1>Start your project with appie.</h1>
+              <p>We will email you only about this product.</p>
+              <div>
+                <input type="email" placeholder="Your email" />
+                <button>Subscribe</button>
+              </div>
+            </div>
+
+            <div class="col-right">
+              <figure>
+                <img src="./img/project-thumb.cb22eef8.png" alt="Projects" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row-1">
+          <div class="footer-item">
+            <figure>
+              <img src="./img/download.png" alt="Logo" />
+            </figure>
+            <p>
+              Appie WordPress is theme is the last theme you will ever have.
+            </p>
+            <a class="footer-link" href="#">Read More &rarr;</a>
+            <div class="icons">
+              <span>
+                <i class="fab fa-facebook-f fa-2x"></i>
+              </span>
+              <span>
+                <i class="fab fa-twitter fa-2x"></i>
+              </span>
+              <span>
+                <i class="fab fa-pinterest-p fa-2x"></i>
+              </span>
+              <span>
+                <i class="fab fa-linkedin-in fa-2x"></i>
+              </span>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="# ">About Us</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Case Studies</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="# ">Community</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <h4>Get in Touch</h4>
+            <ul>
+              <li>
+                <span>
+                  <i class="far fa-envelope"></i
+                  ><a href="#">support@appie.com</a>
+                </span>
+              </li>
+              <li>
+                <span
+                  ><i class="fas fa-phone"></i
+                  ><a href="#">+(642) 342 762 44</a></span
+                >
+              </li>
+              <li>
+                <span
+                  ><i class="fas fa-map-marker-alt"></i
+                  ><a href="#"
+                    >442 Belle Terre St Floor 7, San Francisco, AV 4206</a
+                  ></span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-row-2">
+          <div class="buttons">
+            <a class="ios" href="#">
+              <span>
+                <i class="fab fa-apple"></i>
+                Download for ios
+              </span>
+            </a>
+
+            <a class="android" href="#">
+              <span>
+                <i class="fab fa-google-play"></i>
+                Donload for Android
+              </span>
+            </a>
+          </div>
+          <p>Copyright &copy; 2021 Appie. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

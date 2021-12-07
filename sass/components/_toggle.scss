@@ -1,0 +1,50 @@
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+
+  .month {
+    font-size: 1.6rem;
+    margin-right: 1.5rem;
+  }
+
+  .annual {
+    font-size: 1.6rem;
+    margin-left: 1.5rem;
+  }
+
+  input[type="checkbox"] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 8rem;
+    height: 4rem;
+    background: $color-white;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2.8px;
+      left: 5px;
+      width: 3.5rem;
+      height: 3.5rem;
+      background: $color-primary;
+      border-radius: 90px;
+      transition: 0.3s;
+    }
+  }
+
+  input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+}

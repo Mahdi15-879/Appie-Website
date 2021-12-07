@@ -1,0 +1,164 @@
+.footer {
+  padding-top: 7rem;
+  background-color: #eef1f6;
+  text-align: center;
+
+  &-row-1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 3rem;
+    align-items: flex-start;
+    justify-items: center;
+    padding-bottom: 3.5rem;
+    border-bottom: 1px solid #e1e5ec;
+  }
+
+  &-item {
+    text-align: left;
+
+    p {
+      padding-top: 2.5rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      color: #505056;
+    }
+
+    .icons {
+      margin-top: 2.5rem;
+      display: flex;
+
+      & > *:not(:last-child) {
+        margin-right: 0.6rem;
+      }
+
+      span {
+        background-color: $color-white;
+        width: 3.6rem;
+        height: 3.6rem;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s linear;
+
+        &:hover {
+          background-color: $color-primary;
+
+          i {
+            color: $color-white;
+          }
+        }
+      }
+    }
+
+    h4 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $color-secondary;
+      margin-bottom: 1.8rem;
+    }
+
+    ul li a {
+      color: #505056;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      transition: all 0.3s linear;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    ul li span {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    ul li span i {
+      font-size: 1.6rem;
+      color: $color-primary;
+      margin-right: 1rem;
+    }
+  }
+
+  &-link {
+    color: $color-secondary;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+  }
+
+  &-row-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+
+    @include respond(tab-land) {
+      flex-direction: column;
+      align-items: center;
+
+      .buttons {
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    .buttons {
+      @include respond(phone) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .ios {
+          margin-right: 0 !important;
+          margin-bottom: 2rem;
+        }
+      }
+
+      a {
+        padding: 1.1rem 2rem;
+        font-size: 1.8rem;
+        border-radius: 6px;
+        color: $color-secondary;
+        border: 1px solid rgba($color-secondary, 0.1);
+        transition: all 0.3s linear;
+        cursor: pointer;
+
+        span {
+          display: grid;
+          grid-template-columns: auto 1fr;
+          grid-column-gap: 1rem;
+          align-items: center;
+        }
+      }
+
+      .ios {
+        background-color: $color-white;
+        margin-right: 1rem;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+
+      .android {
+        background-color: transparent;
+
+        &:hover {
+          background-color: $color-white;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      color: #505056;
+    }
+  }
+}
